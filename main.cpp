@@ -1,13 +1,22 @@
 #include <iostream>
 #include <vector>
 
-// this is a comment
+#include "SDL2/SDL.h"
+
+const int SCREEN_WIDTH = 244;
+const int SCREEN_HEIGHT = 288;
 
 int main(int argc, const char* argv[]) {
-	std::vector<int> ints = {0, 1, 2, 3, 4, 5};
-	std::cout << "This is the output!!" << std::endl;
-	for (int i = 0; i < ints.size(); i++) {
-		std::cout << "ints: " << ints[i] << std::endl;
+
+	system("pause");
+	/*
+	if (SDL_Init(SDL_INIT_VIDEO)) {
+		std::cout << "ERROR!!" << std::endl;
+		return 1;
 	}
+
+	SDL_Window* optrWindow = SDL_CreateWindow("Arcade", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
+	*/
+
 	return 0;
 }
